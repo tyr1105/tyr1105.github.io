@@ -163,6 +163,36 @@
       catName: '设计工具',
       icon: '🎨',
       keywords: ['配色', 'color', 'palette', '色彩', '调色板', 'tailwind', 'css', '设计']
+    },
+    {
+      id: 17,
+      name: 'Favicon生成器',
+      desc: '上传图片一键生成所有favicon尺寸，含manifest.json和HTML代码',
+      url: 'https://tyr1105.github.io/favicon-gen/',
+      category: 'dev',
+      catName: '开发工具',
+      icon: '⭐',
+      keywords: ['favicon', '图标', '生成器', 'manifest', 'app icon', '网站图标']
+    },
+    {
+      id: 18,
+      name: 'DevUtils开发者工具',
+      desc: '8个常用开发工具：JSON格式化、Base64、JWT、正则、UUID、URL编码',
+      url: 'https://tyr1105.github.io/devutils/',
+      category: 'dev',
+      catName: '开发工具',
+      icon: '🛠️',
+      keywords: ['devutils', '开发者', 'json', 'base64', 'jwt', 'uuid', '工具集']
+    },
+    {
+      id: 19,
+      name: 'App截图Mockup生成器',
+      desc: '在线App截图Mockup生成，多设备多配色',
+      url: 'https://tyr1105.github.io/shotpro-app/',
+      category: 'design',
+      catName: '设计工具',
+      icon: '📱',
+      keywords: ['mockup', 'app', '截图', '设备', 'phone', 'store']
     }
   ];
 
