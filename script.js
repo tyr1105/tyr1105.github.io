@@ -194,6 +194,28 @@
       catName: '设计工具',
       icon: '📱',
       keywords: ['mockup', 'app', '截图', '设备', 'phone', 'store']
+    },
+    {
+      id: 20,
+      name: '周报生成器',
+      desc: '一键生成专业周报，5种风格模板，告别加班写周报',
+      url: 'https://tyr1105.github.io/weekly-report-gen/',
+      category: 'doc',
+      catName: '文档工具',
+      icon: '📋',
+      keywords: ['周报', '日报', '工作汇报', '报告生成', 'weekly report', '模板']
+    },
+    {
+      id: 21,
+      name: 'AI财经助手Chrome扩展',
+      desc: '一键AI分析财经新闻，智能摘要+情绪分析，支持9大财经网站',
+      url: 'https://github.com/tyr1105/ai-finance-buddy',
+      category: 'ai',
+      catName: 'AI工具',
+      icon: '💹',
+      keywords: ['ai', '财经', '股票', '新闻分析', 'chrome扩展', 'finance'],
+      badge: '新上架'
+    }
     }
   ];
 
