@@ -143,6 +143,16 @@
       catName: '设计工具',
       icon: '💧',
       keywords: ['水印', 'watermark', '批量', '文字', '图片']
+    },
+    {
+      id: 15,
+      name: '在线录屏工具',
+      desc: '一键录制屏幕生成GIF/WebM，无需安装，浏览器端处理',
+      url: 'https://tyr1105.github.io/recsnap/',
+      category: 'dev',
+      catName: '开发工具',
+      icon: '🎬',
+      keywords: ['录屏', 'screen', 'record', 'gif', 'webm', '录制', '屏幕', 'recsnap']
     }
   ];
 
