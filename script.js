@@ -32,7 +32,8 @@
       catName: 'AI工具',
       icon: '📊',
       keywords: ['ai', 'excel', '公式', 'formula', '表格'],
-      badge: '即将上线'
+      badge: '即将上线',
+      proBadge: true
     },
     {
       id: 4,
@@ -247,6 +248,7 @@
 
       card.innerHTML = `
         ${tool.badge ? `<span class="tool-badge">${tool.badge}</span>` : ''}
+        ${tool.proBadge ? '<span class="tool-pro-badge">Pro</span>' : ''}
         <div class="tool-card-header">
           <div class="tool-icon ${tool.category}">${tool.icon}</div>
           <div class="tool-info">
@@ -358,5 +360,34 @@
 
   // ==================== Init ====================
   renderTools();
+
+  // ==================== Pro Banner ====================
+  var proBannerClose = document.getElementById('pro-banner-close');
+  var proBanner = document.getElementById('pro-banner');
+  var proEmailForm = document.getElementById('pro-email-form');
+
+  if (proBannerClose && proBanner) {
+    proBannerClose.addEventListener('click', function() {
+      proBanner.style.display = 'none';
+      localStorage.setItem('pro-banner-closed', 'true');
+    });
+
+    if (localStorage.getItem('pro-banner-closed') === 'true') {
+      proBanner.style.display = 'none';
+    }
+  }
+
+  if (proEmailForm) {
+    proEmailForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var emailInput = proEmailForm.querySelector('.pro-banner-input');
+      var btn = proEmailForm.querySelector('.pro-banner-btn');
+      if (emailInput.value) {
+        btn.textContent = '✅ 已订阅!';
+        emailInput.value = '';
+        setTimeout(function() { btn.textContent = '立即订阅'; }, 3000);
+      }
+    });
+  }
 
 })();

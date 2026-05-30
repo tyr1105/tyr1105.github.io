@@ -12,6 +12,11 @@
   <meta name="author" content="tyr1105">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://tyr1105.github.io/">
+  <link rel="alternate" hreflang="zh-CN" href="https://tyr1105.github.io/">
+  <link rel="alternate" hreflang="zh-TW" href="https://tyr1105.github.io/">
+  <link rel="alternate" hreflang="zh-HK" href="https://tyr1105.github.io/">
+  <link rel="alternate" hreflang="en" href="https://tyr1105.github.io/">
+  <link rel="alternate" hreflang="x-default" href="https://tyr1105.github.io/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -20,11 +25,17 @@
   <meta property="og:url" content="https://tyr1105.github.io/">
   <meta property="og:site_name" content="万能工具箱">
   <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="https://tyr1105.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="万能工具箱 - 免费在线工具集合，包含AI营销文案、PDF处理、图片压缩、发票生成等19+款工具">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="万能工具箱 - 免费在线工具集合">
   <meta name="twitter:description" content="汇集19+个免费在线工具：AI文案生成、PDF处理、图片编辑、录屏工具、配色工具、开发者工具等。">
+  <meta name="twitter:image" content="https://tyr1105.github.io/og-image.png">
+  <meta name="twitter:image:alt" content="万能工具箱 - 免费在线工具集合预览图">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
@@ -86,6 +97,18 @@
 </head>
 <body>
 
+  <!-- ========== Pro Banner ========== -->
+  <div class="pro-banner" id="pro-banner">
+    <div class="pro-banner-inner">
+      <span class="pro-banner-text">🔥 Pro版即将上线：AI智能生成、批量处理、无广告体验</span>
+      <form class="pro-banner-form" id="pro-email-form" onsubmit="return false;">
+        <input type="email" class="pro-banner-input" placeholder="输入邮箱，抢先体验" aria-label="邮箱地址">
+        <button type="submit" class="pro-banner-btn">立即订阅</button>
+      </form>
+      <button class="pro-banner-close" id="pro-banner-close" aria-label="关闭">✕</button>
+    </div>
+  </div>
+
   <!-- ========== Header ========== -->
   <header class="header">
     <div class="container header-inner">
@@ -128,6 +151,19 @@
     </div>
   </section>
 
+  <!-- ========== Ad Banner (Hero - Grid) ========== -->
+  <!-- Google AdSense - Replace with actual ad code after account setup -->
+  <div class="ad-banner ad-banner-mid">
+    <div class="container">
+      <div class="ad-slot" aria-label="广告位">
+        <span class="ad-label">广告</span>
+        <div class="ad-placeholder">
+          <span>Ad Space - 728×90</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ========== Category Tabs ========== -->
   <nav class="categories">
     <div class="container">
@@ -163,6 +199,44 @@
     </div>
   </main>
 
+  <!-- ========== 支持我们 Section ========== -->
+  <section class="support-section">
+    <div class="container">
+      <h2 class="support-title">觉得好用？支持我们继续开发更多工具</h2>
+      <div class="support-cards">
+        <a href="#" class="support-card" onclick="return false;">
+          <span class="support-card-icon">☕</span>
+          <span class="support-card-name">请喝咖啡</span>
+          <span class="support-card-desc">支持开发者</span>
+          <span class="support-card-badge coming-soon-badge">即将开放</span>
+        </a>
+        <a href="https://github.com/tyr1105/tyr1105.github.io" target="_blank" rel="noopener noreferrer" class="support-card">
+          <span class="support-card-icon">⭐</span>
+          <span class="support-card-name">GitHub Star</span>
+          <span class="support-card-desc">给项目加星</span>
+        </a>
+        <button class="support-card" id="share-btn" onclick="navigator.clipboard.writeText(window.location.href).then(function(){var t=document.getElementById('share-btn');var o=t.querySelector('.support-card-desc');var orig=o.textContent;o.textContent='✅ 已复制!';setTimeout(function(){o.textContent=orig;},2000);});">
+          <span class="support-card-icon">📢</span>
+          <span class="support-card-name">分享给朋友</span>
+          <span class="support-card-desc">复制链接</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Ad Banner (Footer) ========== -->
+  <!-- Google AdSense - Replace with actual ad code after account setup -->
+  <div class="ad-banner ad-banner-footer">
+    <div class="container">
+      <div class="ad-slot" aria-label="广告位">
+        <span class="ad-label">广告</span>
+        <div class="ad-placeholder">
+          <span>Ad Space - 728×90</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ========== Footer ========== -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -170,6 +244,7 @@
         <a href="/">🏠 首页</a>
         <a href="https://github.com/tyr1105" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
         <a href="https://github.com/tyr1105/tyr1105.github.io" target="_blank" rel="noopener noreferrer">📦 源码</a>
+        <a href="/blog/" class="footer-blog-link">📝 博客</a>
       </div>
       <p class="footer-copy">
         © 2024 万能工具箱 · Made with <span class="footer-heart">❤️</span> by tyr1105
