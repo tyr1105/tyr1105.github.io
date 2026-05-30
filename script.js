@@ -113,6 +113,36 @@
       catName: '开发工具',
       icon: '⚙️',
       keywords: ['开发者', 'json', 'base64', 'url', '编码', '时间戳', '正则', 'hash', 'uuid', 'dev']
+    },
+    {
+      id: 12,
+      name: '在线图表制作',
+      desc: '粘贴数据一键生成精美图表，支持7种图表+6种配色+高清PNG导出',
+      url: 'https://tyr1105.github.io/chartsnap/',
+      category: 'design',
+      catName: '设计工具',
+      icon: '📊',
+      keywords: ['图表', 'chart', '柱状图', '折线图', '饼图', '数据可视化', '图表制作']
+    },
+    {
+      id: 13,
+      name: 'DevToolBox开发者工具',
+      desc: '13+免费开发者工具集合，JSON/正则/Cron/Hash/JWT/Markdown等',
+      url: 'https://tyr1105.github.io/devtoolbox/',
+      category: 'dev',
+      catName: '开发工具',
+      icon: '🧑‍💻',
+      keywords: ['devtoolbox', '开发者', 'json', 'regex', 'cron', 'jwt', 'markdown', 'hash']
+    },
+    {
+      id: 14,
+      name: '水印大师',
+      desc: '批量图片水印工具，支持文字水印、平铺水印、自定义位置',
+      url: 'https://tyr1105.github.io/watermark-pro/',
+      category: 'design',
+      catName: '设计工具',
+      icon: '💧',
+      keywords: ['水印', 'watermark', '批量', '文字', '图片']
     }
   ];
 
