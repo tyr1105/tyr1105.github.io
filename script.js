@@ -153,6 +153,16 @@
       catName: '开发工具',
       icon: '🎬',
       keywords: ['录屏', 'screen', 'record', 'gif', 'webm', '录制', '屏幕', 'recsnap']
+    },
+    {
+      id: 16,
+      name: '配色大师',
+      desc: '智能配色方案生成器，多种和谐模式，UI预览，一键导出CSS/Tailwind',
+      url: 'https://tyr1105.github.io/colorpilot/',
+      category: 'design',
+      catName: '设计工具',
+      icon: '🎨',
+      keywords: ['配色', 'color', 'palette', '色彩', '调色板', 'tailwind', 'css', '设计']
     }
   ];
 
