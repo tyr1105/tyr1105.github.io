@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在线文本分析工具 - 字数统计、词频分析、文本对比、大小写转换 | 免费好用</title>
+<meta name="description" content="免费在线文本工具：字数统计、中英文字数、词频分析、文本对比Diff、大小写转换、去重、排序。无需注册，数据本地处理。">
+<meta name="keywords" content="字数统计,词频分析,文本对比,字数计算,在线工具,文本处理,大小写转换,去重,排序">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tyr1105.github.io/text-tools/">
+<meta property="og:title" content="在线文本分析工具 - 免费好用">
+<meta property="og:description" content="字数统计、词频分析、文本对比等8款文本工具，免费使用">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"在线文本分析工具","url":"https://tyr1105.github.io/text-tools/","description":"免费在线文本工具：字数统计、词频分析、文本对比等","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}
+</script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <a href="https://tyr1105.github.io/" class="back">← 万能工具箱</a>
+    <h1>📝 在线文本分析工具</h1>
+    <p>字数统计、词频分析、文本对比等8款文本处理工具</p>
+  </div>
+</header>
+
+<main class="container">
+<nav class="tabs">
+  <button class="tab active" data-t="counter">📊字数统计</button>
+  <button class="tab" data-t="freq">📈词频分析</button>
+  <button class="tab" data-t="diff">🔍文本对比</button>
+  <button class="tab" data-t="case">🔤大小写</button>
+  <button class="tab" data-t="dedup">🗑️去重</button>
+  <button class="tab" data-t="sort">📋排序</button>
+  <button class="tab" data-t="extract">🎯提取</button>
+  <button class="tab" data-t="replace">🔄替换</button>
+</nav>
+
+<!-- 字数统计 -->
+<section id="p-counter" class="panel active">
+  <h2>📊 字数统计</h2>
+  <p class="desc">实时统计中英文字数、字符数、段落数、句子数</p>
+  <textarea id="wc-text" rows="10" placeholder="在此粘贴或输入文本..." oninput="countWords()"></textarea>
+  <div id="wc-result" class="stats-grid">
+    <div class="stat-card"><div class="stat-num" id="wc-chars">0</div><div class="stat-label">总字符数</div></div>
+    <div class="stat-card"><div class="stat-num" id="wc-nospace">0</div><div class="stat-label">不含空格</div></div>
+    <div class="stat-card"><div class="stat-num" id="wc-cn">0</div><div class="stat-label">中文字数</div></div>
+    <div class="stat-card"><div class="stat-num" id="wc-en">0</div><div class="stat-label">英文单词数</div></div>
+    <div class="stat-card"><div class="stat-num" id="wc-paras">0</div><div class="stat-label">段落数</div></div>
+    <div class="stat-card"><div class="stat-num" id="wc-sentences">0</div><div class="stat-label">句子数</div></div>
+    <div class="stat-card"><div class="stat-num" id="wc-lines">0</div><div class="stat-label">行数</div></div>
+    <div class="stat-card"><div class="stat-num" id="wc-time">0</div><div class="stat-label">阅读时间(分)</div></div>
+  </div>
+</section>
+
+<!-- 词频分析 -->
+<section id="p-freq" class="panel">
+  <h2>📈 词频分析</h2>
+  <p class="desc">分析文本中词语出现频率，支持中文分词和英文单词</p>
+  <textarea id="freq-text" rows="8" placeholder="在此粘贴文本进行词频分析..."></textarea>
+  <div class="form-row">
+    <label>最小词长：<input type="number" id="freq-min" value="2" min="1" max="10" style="width:60px"></label>
+    <label>显示数量：<input type="number" id="freq-top" value="30" min="5" max="200" style="width:60px"></label>
+    <button class="btn" onclick="analyzeFreq()">分析词频</button>
+  </div>
+  <div id="freq-result"></div>
+</section>
+
+<!-- 文本对比 -->
+<section id="p-diff" class="panel">
+  <h2>🔍 文本对比 (Diff)</h2>
+  <p class="desc">对比两段文本的差异，高亮显示不同之处</p>
+  <div class="diff-grid">
+    <div><label>原文</label><textarea id="diff-a" rows="10" placeholder="粘贴原文..."></textarea></div>
+    <div><label>修改后</label><textarea id="diff-b" rows="10" placeholder="粘贴修改后的文本..."></textarea></div>
+  </div>
+  <button class="btn" onclick="textDiff()">对比差异</button>
+  <div id="diff-result"></div>
+</section>
+
+<!-- 大小写转换 -->
+<section id="p-case" class="panel">
+  <h2>🔤 大小写转换</h2>
+  <p class="desc">一键转换英文大小写、驼峰命名、下划线命名等</p>
+  <textarea id="case-text" rows="6" placeholder="输入英文文本..."></textarea>
+  <div class="btn-row">
+    <button class="btn" onclick="convertCase('upper')">全部大写</button>
+    <button class="btn" onclick="convertCase('lower')">全部小写</button>
+    <button class="btn" onclick="convertCase('title')">首字母大写</button>
+    <button class="btn" onclick="convertCase('sentence')">句首大写</button>
+    <button class="btn" onclick="convertCase('camel')">驼峰命名</button>
+    <button class="btn" onclick="convertCase('snake')">下划线命名</button>
+    <button class="btn" onclick="convertCase('kebab')">连字符命名</button>
+    <button class="btn" onclick="convertCase('toggle')">大小写互换</button>
+  </div>
+  <textarea id="case-out" rows="6" readonly placeholder="转换结果..."></textarea>
+  <button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('case-out').value)">复制结果</button>
+</section>
+
+<!-- 去重 -->
+<section id="p-dedup" class="panel">
+  <h2>🗑️ 文本去重</h2>
+  <p class="desc">按行去重，支持多种去重模式</p>
+  <textarea id="dedup-text" rows="10" placeholder="每行一个条目，自动去除重复行..."></textarea>
+  <div class="btn-row">
+    <button class="btn" onclick="dedup('exact')">精确去重</button>
+    <button class="btn" onclick="dedup('trim')">去除空格后去重</button>
+    <button class="btn" onclick="dedup('case')">忽略大小写去重</button>
+  </div>
+  <textarea id="dedup-out" rows="6" readonly></textarea>
+  <div id="dedup-stats" class="stats-inline"></div>
+</section>
+
+<!-- 排序 -->
+<section id="p-sort" class="panel">
+  <h2>📋 文本排序</h2>
+  <p class="desc">按行排序文本内容</p>
+  <textarea id="sort-text" rows="10" placeholder="每行一个条目..."></textarea>
+  <div class="btn-row">
+    <button class="btn" onclick="sortLines('az')">A→Z 排序</button>
+    <button class="btn" onclick="sortLines('za')">Z→A 排序</button>
+    <button class="btn" onclick="sortLines('len')">按长度排序</button>
+    <button class="btn" onclick="sortLines('num')">按数字排序</button>
+    <button class="btn" onclick="sortLines('rand')">随机打乱</button>
+    <button class="btn" onclick="sortLines('rev')">反转顺序</button>
+  </div>
+  <textarea id="sort-out" rows="6" readonly></textarea>
+</section>
+
+<!-- 提取 -->
+<section id="p-extract" class="panel">
+  <h2>🎯 文本提取</h2>
+  <p class="desc">从文本中提取特定内容：邮箱、URL、手机号、数字等</p>
+  <textarea id="ext-text" rows="8" placeholder="粘贴包含邮箱/URL/手机号的文本..."></textarea>
+  <div class="btn-row">
+    <button class="btn" onclick="extract('email')">提取邮箱</button>
+    <button class="btn" onclick="extract('url')">提取URL</button>
+    <button class="btn" onclick="extract('phone')">提取手机号</button>
+    <button class="btn" onclick="extract('number')">提取数字</button>
+    <button class="btn" onclick="extract('ip')">提取IP地址</button>
+    <button class="btn" onclick="extract('chinese')">提取中文</button>
+  </div>
+  <textarea id="ext-out" rows="6" readonly></textarea>
+  <div id="ext-stats" class="stats-inline"></div>
+</section>
+
+<!-- 查找替换 -->
+<section id="p-replace" class="panel">
+  <h2>🔄 查找替换</h2>
+  <p class="desc">支持正则表达式的批量查找替换</p>
+  <textarea id="rep-text" rows="8" placeholder="输入原始文本..."></textarea>
+  <div class="form-row">
+    <input type="text" id="rep-find" placeholder="查找内容（支持正则）">
+    <input type="text" id="rep-replace" placeholder="替换为">
+    <label><input type="checkbox" id="rep-regex"> 正则</label>
+    <label><input type="checkbox" id="rep-case"> 区分大小写</label>
+    <button class="btn" onclick="findReplace()">替换</button>
+  </div>
+  <textarea id="rep-out" rows="6" readonly></textarea>
+</section>
+</main>
+
+<footer class="footer"><p>© 2024-2026 <a href="https://tyr1105.github.io/">万能工具箱</a> · 数据仅在本地处理</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
