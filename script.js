@@ -259,7 +259,8 @@ badge: '新上线'
     {id:32,name:'CSS动画曲线生成器',desc:'贝塞尔曲线编辑器，23+预设，实时动画预览',url:'https://tyr1105.github.io/cubic-bezier/',category:'dev',catName:'开发工具',icon:'📈',keywords:['bezier','动画曲线'],badge:'新上线'},
     {id:33,name:'CSS Grid布局生成器',desc:'可视化Grid编辑器，7种预设布局，响应式预览',url:'https://tyr1105.github.io/css-grid-gen/',category:'dev',catName:'开发工具',icon:'📐',keywords:['grid','布局'],badge:'新上线'},
     {id:34,name:'TailSections着陆页组件',desc:'40+精美Tailwind CSS着陆页组件，复制即用，暗色模式，响应式',url:'https://tyr1105.github.io/tailsections/',category:'dev',catName:'开发工具',icon:'🎨',keywords:['tailwind','landing','着陆页','组件','sections','模板'],badge:'NEW 💎'},
-    {id:35,name:'CopyFaster解锁复制',desc:'Chrome扩展：一键解除网页复制限制，右键解锁，强制复制',url:'https://tyr1105.github.io/copyfaster/',category:'dev',catName:'开发工具',icon:'📋',keywords:['chrome','extension','复制','右键','解锁','copy'],badge:'新上线'}
+    {id:35,name:'CopyFaster解锁复制',desc:'Chrome扩展：一键解除网页复制限制，右键解锁，强制复制',url:'https://tyr1105.github.io/copyfaster/',category:'dev',catName:'开发工具',icon:'📋',keywords:['chrome','extension','复制','右键','解锁','copy'],badge:'新上线'},
+    {id:36,name:'ScreenSnap截图标注',desc:'免费在线截图标注工具，箭头/文字/形状/编号标注，浏览器端处理',url:'https://tyr1105.github.io/screensnap/',category:'design',catName:'设计工具',icon:'📸',keywords:['screenshot','截图','标注','annotation','箭头','arrow'],badge:'NEW'}
 
 ];
 
