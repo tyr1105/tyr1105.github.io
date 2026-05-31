@@ -226,6 +226,17 @@
       icon: '✂️',
       keywords: ['ai', '抠图', '背景去除', 'background', 'remove', 'transparent', 'cutout'],
       badge: 'NEW'
+    },
+    {
+      id: 23,
+      name: '证件照制作器',
+      desc: '智能背景移除，一键换底色（白/蓝/红），支持一寸二寸护照签证等标准尺寸，A4排版打印',
+      url: 'https://tyr1105.github.io/idphoto-maker/',
+      category: 'design',
+      catName: '设计工具',
+      icon: '📷',
+      keywords: ['证件照', 'id photo', '一寸', '二寸', '护照', '签证', '换底色', '白底', '蓝底', '红底', '背景移除'],
+      badge: '新上线'
     }
   ];
 
