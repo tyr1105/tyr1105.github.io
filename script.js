@@ -248,8 +248,19 @@ badge: '新上线'
       icon: '🤝',
       keywords: ['ai', 'cover letter', 'resume', 'job', 'interview'],
       badge: 'NEW'
-    }
+    },
+    {id:25,name:'CSS渐变生成器',desc:'可视化CSS渐变编辑器，36+预设，一键导出CSS/SVG/PNG',url:'https://tyr1105.github.io/css-gradient-gen/',category:'dev',catName:'开发工具',icon:'🌈',keywords:['css','渐变','gradient'],badge:'新上线'},
+    {id:26,name:'占位图片生成器',desc:'开发专用占位图，自定义尺寸/颜色，批量生成',url:'https://tyr1105.github.io/placeholder-img/',category:'dev',catName:'开发工具',icon:'🖼️',keywords:['placeholder','占位图'],badge:'新上线'},
+    {id:27,name:'CSS阴影生成器',desc:'多层阴影编辑器，33+预设，Material Design，实时预览',url:'https://tyr1105.github.io/shadow-gen/',category:'dev',catName:'开发工具',icon:'🎭',keywords:['css','shadow','阴影'],badge:'新上线'},
+    {id:28,name:'CSS圆角生成器',desc:'拖拽调整四角，15+预设形状，形状变形动画',url:'https://tyr1105.github.io/border-radius-gen/',category:'dev',catName:'开发工具',icon:'⬜',keywords:['css','border-radius','圆角'],badge:'新上线'},
+    {id:29,name:'毛玻璃效果生成器',desc:'Glassmorphism生成器，16+预设风格，实时预览',url:'https://tyr1105.github.io/glassmorphism-gen/',category:'dev',catName:'开发工具',icon:'🧊',keywords:['glassmorphism','毛玻璃'],badge:'新上线'},
+    {id:30,name:'HTML Meta标签生成器',desc:'完整Meta标签，含OG/Twitter Card/JSON-LD',url:'https://tyr1105.github.io/meta-tag-gen/',category:'dev',catName:'开发工具',icon:'🏷️',keywords:['meta','SEO','JSON-LD'],badge:'新上线'},
+    {id:31,name:'中文占位文本生成器',desc:'假文/随机汉字/古诗词/科技体，4种模式',url:'https://tyr1105.github.io/lorem-gen/',category:'doc',catName:'文档工具',icon:'📝',keywords:['占位文本','假文','lorem'],badge:'新上线'},
+    {id:32,name:'CSS动画曲线生成器',desc:'贝塞尔曲线编辑器，23+预设，实时动画预览',url:'https://tyr1105.github.io/cubic-bezier/',category:'dev',catName:'开发工具',icon:'📈',keywords:['bezier','动画曲线'],badge:'新上线'},
+    {id:33,name:'CSS Grid布局生成器',desc:'可视化Grid编辑器，7种预设布局，响应式预览',url:'https://tyr1105.github.io/css-grid-gen/',category:'dev',catName:'开发工具',icon:'📐',keywords:['grid','布局'],badge:'新上线'}
+
 ];
+
 
 // ==================== State ====================
 let currentCategory = 'all';
