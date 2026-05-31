@@ -262,7 +262,8 @@ badge: '新上线'
     {id:35,name:'CopyFaster解锁复制',desc:'Chrome扩展：一键解除网页复制限制，右键解锁，强制复制',url:'https://tyr1105.github.io/copyfaster/',category:'dev',catName:'开发工具',icon:'📋',keywords:['chrome','extension','复制','右键','解锁','copy'],badge:'新上线'},
     {id:36,name:'ScreenSnap截图标注',desc:'免费在线截图标注工具，箭头/文字/形状/编号标注，浏览器端处理',url:'https://tyr1105.github.io/screensnap/',category:'design',catName:'设计工具',icon:'📸',keywords:['screenshot','截图','标注','annotation','箭头','arrow'],badge:'NEW'},
     {id:37,name:'QuickChart图表制作',desc:'免费在线图表制作，支持柱状图/折线图/饼图/雷达图，一键导出PNG',url:'https://tyr1105.github.io/quickchart/',category:'design',catName:'设计工具',icon:'📊',keywords:['chart','图表','柱状图','饼图','数据可视化'],badge:'新上线'},
-    {id:38,name:'CodeSnap代码截图',desc:'代码截图美化工具，12种渐变背景，6种编辑器主题，一键导出高清PNG',url:'https://tyr1105.github.io/codesnap/',category:'dev',catName:'开发工具',icon:'📷',keywords:['code','代码','截图','screenshot','carbon','美化'],badge:'新上线'}
+    {id:38,name:'CodeSnap代码截图',desc:'代码截图美化工具，12种渐变背景，6种编辑器主题，一键导出高清PNG',url:'https://tyr1105.github.io/codesnap/',category:'dev',catName:'开发工具',icon:'📷',keywords:['code','代码','截图','screenshot','carbon','美化'],badge:'新上线'},
+    {id:39,name:'MarkdownNice排版',desc:'Markdown编辑器一键排版，微信/知乎/掘金风格，一键复制富文本',url:'https://tyr1105.github.io/mdnice/',category:'doc',catName:'文档工具',icon:'📝',keywords:['markdown','排版','微信','知乎','掘金','编辑器'],badge:'NEW'}
 
 ];
 
