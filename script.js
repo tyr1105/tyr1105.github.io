@@ -265,6 +265,7 @@ badge: '新上线'
     {id:38,name:'CodeSnap代码截图',desc:'代码截图美化工具，12种渐变背景，6种编辑器主题，一键导出高清PNG',url:'https://tyr1105.github.io/codesnap/',category:'dev',catName:'开发工具',icon:'📷',keywords:['code','代码','截图','screenshot','carbon','美化'],badge:'新上线'},
     {id:39,name:'MarkdownNice排版',desc:'Markdown编辑器一键排版，微信/知乎/掘金风格，一键复制富文本',url:'https://tyr1105.github.io/mdnice/',category:'doc',catName:'文档工具',icon:'📝',keywords:['markdown','排版','微信','知乎','掘金','编辑器'],badge:'NEW'}
     ,{id:40,name:'在线计算器大全',desc:'个税/房贷/投资/BMI/工资等10款实用计算器，数据本地处理',url:'https://tyr1105.github.io/calc-suite/',category:'doc',catName:'文档工具',icon:'🔢',keywords:['计算器','个税','房贷','投资','BMI','工资','日期','单位转换','calculator','tax'],badge:'NEW'}
+    ,{id:41,name:'文本分析工具箱',desc:'字数统计/词频分析/文本对比/大小写转换/去重排序，8款文本处理工具',url:'https://tyr1105.github.io/text-tools/',category:'doc',catName:'文档工具',icon:'📝',keywords:['字数统计','词频','文本对比','大小写','去重','排序','text','word count'],badge:'NEW'}
 
 ];
 
