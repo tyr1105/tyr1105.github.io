@@ -266,6 +266,7 @@ badge: '新上线'
     {id:39,name:'MarkdownNice排版',desc:'Markdown编辑器一键排版，微信/知乎/掘金风格，一键复制富文本',url:'https://tyr1105.github.io/mdnice/',category:'doc',catName:'文档工具',icon:'📝',keywords:['markdown','排版','微信','知乎','掘金','编辑器'],badge:'NEW'}
     ,{id:40,name:'在线计算器大全',desc:'个税/房贷/投资/BMI/工资等10款实用计算器，数据本地处理',url:'https://tyr1105.github.io/calc-suite/',category:'doc',catName:'文档工具',icon:'🔢',keywords:['计算器','个税','房贷','投资','BMI','工资','日期','单位转换','calculator','tax'],badge:'NEW'}
     ,{id:41,name:'文本分析工具箱',desc:'字数统计/词频分析/文本对比/大小写转换/去重排序，8款文本处理工具',url:'https://tyr1105.github.io/text-tools/',category:'doc',catName:'文档工具',icon:'📝',keywords:['字数统计','词频','文本对比','大小写','去重','排序','text','word count'],badge:'NEW'}
+    ,{id:42,name:'ShotFrame截图美化',desc:'上传截图，选择渐变背景/设备框/阴影/水印，一键导出高清PNG',url:'https://tyr1105.github.io/shotframe/',category:'design',catName:'设计工具',icon:'📸',keywords:['截图','美化','screenshot','gradient','渐变','设备框','mockup','shadow'],badge:'NEW 🔥'}
 
 ];
 
