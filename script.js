@@ -156,7 +156,7 @@
       keywords: ['录屏', 'screen', 'record', 'gif', 'webm', '录制', '屏幕', 'recsnap']
     },
     {
-      id: 16,
+      id: 17,
       name: '配色大师',
       desc: '智能配色方案生成器，多种和谐模式，UI预览，一键导出CSS/Tailwind',
       url: 'https://tyr1105.github.io/colorpilot/',
@@ -215,7 +215,17 @@
       icon: '💹',
       keywords: ['ai', '财经', '股票', '新闻分析', 'chrome扩展', 'finance'],
       badge: '新上架'
-    }
+    },
+    {
+      id: 22,
+      name: 'AI智能抠图',
+      desc: 'AI一键去除图片背景，100%浏览器本地处理保护隐私，支持自定义背景色',
+      url: 'https://tyr1105.github.io/bg-remove/',
+      category: 'ai',
+      catName: 'AI工具',
+      icon: '✂️',
+      keywords: ['ai', '抠图', '背景去除', 'background', 'remove', 'transparent', 'cutout'],
+      badge: 'NEW'
     }
   ];
 
