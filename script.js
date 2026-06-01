@@ -268,6 +268,7 @@ badge: '新上线'
     ,{id:41,name:'文本分析工具箱',desc:'字数统计/词频分析/文本对比/大小写转换/去重排序，8款文本处理工具',url:'https://tyr1105.github.io/text-tools/',category:'doc',catName:'文档工具',icon:'📝',keywords:['字数统计','词频','文本对比','大小写','去重','排序','text','word count'],badge:'NEW'}
     ,{id:42,name:'ShotFrame截图美化',desc:'上传截图，选择渐变背景/设备框/阴影/水印，一键导出高清PNG',url:'https://tyr1105.github.io/shotframe/',category:'design',catName:'设计工具',icon:'📸',keywords:['截图','美化','screenshot','gradient','渐变','设备框','mockup','shadow'],badge:'NEW 🔥'}
     ,{id:43,name:'万能单位转换器',desc:'14类单位实时转换：长度/重量/温度/面积/体积/数据/速度/时间/压力/功率/能量',url:'https://tyr1105.github.io/unit-converter/',category:'doc',catName:'文档工具',icon:'⚖️',keywords:['单位转换','单位换算','长度','重量','温度','面积','体积','unit converter','换算'],badge:'NEW'}
+    ,{id:44,name:'Shadowcraft阴影库',desc:'200+ CSS阴影效果，含玻璃拟态/新拟态/发光/多层深度，点击复制',url:'https://tyr1105.github.io/shadowcraft/',category:'design',catName:'设计工具',icon:'🎨',keywords:['shadow','box-shadow','玻璃拟态','新拟态','glassmorphism','neumorphism','CSS阴影'],badge:'NEW 🔥'}
 
 ];
 
